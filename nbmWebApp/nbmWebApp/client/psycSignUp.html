@@ -10,54 +10,56 @@
 </head>
 
 <body>
-    <h1 id="title">Professionals sign up form</h1>
-    <p id="description"> Please fill in your details so we can add you to our database</p>
-    <form id="survey-form">
-        <div class="form-control">
-            <label for="name" id="name-label">Firstname</label>
-            <input id="name" type="text" placeholder="Enter your name" required />
-        </div>
+    <div x-data="info">
+        <h1 id="title">Professionals sign up form</h1>
+        <p id="description"> Please fill in your details so we can add you to our database</p>
+        <form id="survey-form">
+            <div class="form-control">
+                <label for="name" id="name-label">Firstname</label>
+                <input id="name" type="text" placeholder="Enter your name" required />
+            </div>
 
-        <div class="form-control">
-            <label for="email" id="email-label">Lastname</label>
-            <input id="text" type="email" placeholder="Enter your Lastname" required />
-        </div>
+            <div class="form-control">
+                <label for="email" id="email-label">Lastname</label>
+                <input id="text" type="email" placeholder="Enter your Lastname" required />
+            </div>
 
-        <div class="form-control">
-            <label for="number" id="number-label">passAuth</label>
-            <input id="number" type="password" placeholder="password" min="15" max="20" required />
-        </div>
-        <div class="form-control">
-            <label for="number" id="number-label">PracticeNo</label>
-            <input id="number" type="number" placeholder="15545" min="15" max="20" required />
-        </div>
-        <div class="form-control">
-            <label for="email" id="number-label">Email</label>
-            <input id="number" type="text" placeholder="zezethu@gmail.com" min="15" max="20" required />
-        </div>
-        <div class="form-control">
-            <label for="number" id="number-label">contact</label>
-            <input id="number" type="number" placeholder="074521145" min="15" max="20" required />
-        </div>
-        <div class="form-control">
-            <label for="profession">What is your Profession?</label>
-            <select id="dropdown" name="profession">
-                <option disabled selected value>Select Profession</option>
-                <option value="lifecoach">Life Coach</option>
-                <option value="psychologist">Psychologist</option>
-            </select>
-        </div>
-        <div class="form-control">
-            <p>What kind of sessions would you like to offer?</p>
-            <select id="dropdown-session" name="session">
-                <option disabled selected value> Select Session</option>
-                <option value="online">Online sessions</option>
-                <option value="contactsession sciences">Contact sessions</option>
-                <option value="group">Group sessions</option>
-            </select>
-        </div>
-        <Button id="submit">Submit</button>
-    </form>
+            <div class="form-control">
+                <label for="number" id="number-label">passAuth</label>
+                <input id="number" type="password" placeholder="password" min="15" max="20" required />
+            </div>
+            <div class="form-control">
+                <label for="number" id="number-label">PracticeNo</label>
+                <input id="number" type="number" placeholder="15545" min="15" max="20" required />
+            </div>
+            <div class="form-control">
+                <label for="email" id="number-label">Email</label>
+                <input id="number" type="text" placeholder="zezethu@gmail.com" min="15" max="20" required />
+            </div>
+            <div class="form-control">
+                <label for="number" id="number-label">contact</label>
+                <input id="number" type="number" placeholder="074521145" min="15" max="20" required />
+            </div>
+            <div class="form-control">
+                <label for="profession">What is your Profession?</label>
+                <select id="dropdown" name="profession">
+                    <option disabled selected value>Select Profession</option>
+                    <option value="lifecoach">Life Coach</option>
+                    <option value="psychologist">Psychologist</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <p>What kind of sessions would you like to offer?</p>
+                <select id="dropdown-session" name="session">
+                    <option disabled selected value> Select Session</option>
+                    <option value="online">Online sessions</option>
+                    <option value="contactsession sciences">Contact sessions</option>
+                    <option value="group">Group sessions</option>
+                </select>
+            </div>
+            <Button id="submit">Submit</button>
+        </form>
+    </div>
     <script type="module" src="/main.js"></script>
 </body>
 
