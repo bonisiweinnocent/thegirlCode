@@ -2,20 +2,44 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-  <div id="app"></div>
-
-  <h1>Hello world</h1>
-
-
-
+  <div class="logo">
+    <img src="/images/phumza.png" alt="Application Logo" />
+  </div>
+  <div class="description">
+    <p1>GBV/Abuse is something that no one should have to deal with at all. But
+      alas, we live in an imperfect world and from time to time we find
+      ourselves faced with these challenges. Nonetheless, this is even more
+      reason why we need to bend together as humanity to try and support each
+      other as much as we can. And that is why we have decided to provide a
+      platform where people can do just that. The platform also allows
+      therapists to offer their services free of charge. The purpose of this
+      website is to provide women with the comfort of knowing that they do not
+      have to deal with everything alone as well as the strength to face their
+      situations and share them with other women who might need to hear it.
+      Hence the name "NayaBasadiMaatla" which simply translates to
+      GiveWomenStrength "For the People, By the People".</p1>
+  </div>
+  <div class="login">
+    <form>
+      <label for="Username">Username: </label>
+      <input type="text" id="name" name="loginDetails" placeholder="Please enter your username " required />
+      <br />
+      <label for="password">password:</label>
+      <input type="password" id="password" name="loginDetails" placeholder="enter your password" required />
+    </form>
+    <div class="buttons">
+      <button class="bttn1" type="button">sign up</button>
+      <a href="home.html"><button class="bttn2" type="button">Login</button></a>
+    </div>
+  </div>
   <script type="module" src="/main.js"></script>
 </body>
-
 </html>

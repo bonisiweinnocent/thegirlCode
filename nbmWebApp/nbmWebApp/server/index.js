@@ -23,7 +23,7 @@ const config = {
     connectionString:
        
 
-        process.env.DATABASE_URL || "postgresql://bonny:pg123@localhost:5432/postgres",
+        process.env.DATABASE_URL || "postgresql://bonny:pg123@localhost:5432/nbm_db",
 
 };
 

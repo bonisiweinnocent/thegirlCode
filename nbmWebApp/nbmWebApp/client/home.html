@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Dancing+Script:wght@700&family=Lobster&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <title>Vite App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container" x-data="info">
+
+    <div class="">
+      <section id="#home">
+        <div class="header">
+          <nav id="nav-bar">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#motivation" class="nav-link">Motivation</a>
+            <a href="#psychologist" class="nav-link">Psychologists</a>
+            <a href="home.html"><button>Log-Out</button></a>
+          </nav>
+        </div>
+        <div class="inputs">
+          <p class="msg">
+            This is a safe space for you to share your story.
+            We are here for you, feel free to share your story.
+          </p>
+          <label for="mess">
+            Message
+          </label>
+          <input class="inputMessage" x-model="user_message" type="text" name="mess">
+          <button class="shareButton" @click="sendStory()" id="btn">SHARE</button>
+        </div>
+        <p class="msgs">Below are stories shared by other strong Women</p>
+        <button class="shareButton" @click="getStory()" id="btn">Click here to show stories</button>
+        <div class="messages">
+
+          <template x-for="story in userStories">
+
+            <div class="s"> 
+              <span  x-text="story.user_message"></span>
+
+            </div>
+          </template>
+        </div>
+
+      </section>
+    </div>
+    <section id="motivation">
+      <h1>Stories of survivors</h1>
+      <p class="msg">A GBV survivor please share how you came out of it so as to give hope to others</p>
+      <label for="mess">
+        Message
+      </label>
+      <input type="text" name="mess">
+      <button id="btn">SHARE</button>
+      <div class="motiv">
+        </div>
+    </section>
+    <section id="psychologists">
+    </section>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

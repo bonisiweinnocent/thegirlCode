@@ -1,4 +1,8 @@
 import './style.css'
+import './index.css'
+import './user.css'
+import './psyc.css'
+
 
 import help from "./app";
 import "./app"

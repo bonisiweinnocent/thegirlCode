@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -13,36 +13,36 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
+} */
 
-a {
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
-}
-a:hover {
+} */
+/* a:hover {
   color: #535bf2;
-}
+} */
 
-body {
+/* :root body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
+} */
 
-h1 {
+/* h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
+} */
 
-#app {
+/* #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+} */
 
 .logo {
   height: 6em;
@@ -82,6 +82,128 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+body{
+  max-width: 100%;
+  width: 100%;
+}
+nav{
+  border-collapse: collapse;
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.09);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.nav-link:hover{
+  background-color: rgb(238, 141, 154);
+}
+.nav-link {
+  color: brown;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px;
+  transition: 0.2s ease-out;
+}
+h1
+{
+  text-align: center;
+}
+.messages
+{
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 90vh;
+  width: 1300px;
+  /* margin: 60px 30px 0 60px; */
+  background-color: pink;
+  /* display: flex; */
+
+display: flex;
+flex-wrap: wrap;
+/* max-width: 1000px; */
+margin: 40px auto;
+text-align: center;
+margin-top: 80px;
+}
+.msg
+{
+margin: 90px 40px 0 50px;
+text-align: center;
+padding-bottom: 20px;
+font-size: 20px;
+}
+#btn
+{
+width: 100px;
+height: 75px;
+background-color: pink;
+}
+.msgs
+{
+text-align: center;
+padding-bottom: 20px;
+font-size: 20px;
+}
+label
+{
+padding: 0 0 0 370px;
+font-size: 30px;
+}
+
+input{
+height: 70px;
+width: 400px;
+}
+.motiv
+{
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 80vh;
+  width: 1300px;
+  margin: 60px 30px 0 60px;
+  background-color: pink;
+  display: flex;
+}
+img
+{
+    width: 200px;
+    height: 200px;
+}
+.therapists{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.therapists > div
+{
+    width: 30%;
+}
+ .s {
+width: 20%;
+margin: 50px 0 0 30px;
+border: 4px solid black;
+padding: 20px;
+font-weight: 900;
+color: black;
+font-family: arial;
+position: relative;
+height: 200px;
+list-style: none;
+
+} 
+
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
